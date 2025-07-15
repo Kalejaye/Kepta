@@ -172,7 +172,7 @@ Server.post('/create-payment', async (request, response) => {
     const params = JSON.stringify({
         name: name,
         description: description || "Payment for order",
-        amount: amount * 100, // Convert to kobo (Paystack expects amount in kobo)
+        amount: amount * 100,
         callback_url: callback_url || `http://${host}:3000/payment-success`
     });
     
