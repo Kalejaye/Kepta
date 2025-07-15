@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init:*)",
+      "Bash(git checkout:*)",
+      "Bash(cd \"C:\\Users\\HP\\Documents\\KEPTA\\BACKEND\")",
+      "Bash(npm start)",
+      "Bash(pkill:*)",
+      "WebFetch(domain:paystack.com)",
+      "Bash(curl:*)"
+    ],
+    "deny": []
+  }
+}

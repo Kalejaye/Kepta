@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#NAVBAR1 {
+    padding-left: 6rem;
+    padding-right: 10rem;
+    background-color: white !important;
+}
+
+#KEPTA {
+    flex: 1;
+    /* Pushes Kepta to the left */
+}
+
+
+#KEPTA a {
+    color: rgb(238, 116, 37);
+    font-size: 200%;
+    font-weight: 800;
+}
+
+#navbarSupportedContent {
+    flex: 2;
+    /* Centers the navigation */
+    display: flex;
+    justify-content: center;
+
+}
+
+#navbarSupportedContent li a {
+    color: rgb(119, 118, 124);
+    font-weight: 600;
+}
+
+#navbarSupportedContent li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.nav-link.active {
+    color: rgb(238, 116, 37) !important;
+}
+
+#KEPTASEARCH {
+    flex: 1;
+    /* Pushes Search to the right */
+    display: flex;
+    justify-content: flex-end;
+}
+
+#KEPTASEARCH .sbt,
+#KEPTASEARCH .rbt {
+    margin-right: 15px;
+    /* Adds space between Sign In and Register */
+}
+
+#KEPTASEARCH button {
+    border-radius: 30px;
+    padding: .1rem !important;
+    border: 0.1rem solid rgb(119, 118, 124);
+    background-color: transparent;
+    width: 7rem;
+    height: 2rem;
+}
+
+#KEPTASEARCH button:hover {
+    background-color: rgb(238, 116, 37);
+    color: white;
+    border: transparent;
+}
+
+.container1 {
+    padding: 4rem;
+    margin-top: 4rem;
+}
+
+.ct1text h2 {
+    font-weight: 700;
+    font-size: 240;
+}
+
+.ct1text {
+    margin-bottom: 3rem;
+}
+
+.ct1text2 .col {
+    text-align: left;
+}
+
+.ct1text2 .col h4 {
+    font-weight: 700;
+    color: #e5722c;
+}
+
+.ct1text2 .col p {
+    font-weight: 600;
+}
+
+.ct1text2 .col img {
+    width: 100%;
+    height: 37rem;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+/* === MODAL STYLING FOR KEPTA === */
+
+/* Shared modal styling */
+#SignInModal .modal-content,
+#registerModal .modal-content {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    /* Soft transparent white */
+    backdrop-filter: blur(8px);
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Dimmed orange modal headers */
+#SignInModal .modal-header,
+#registerModal .modal-header {
+    background-color: #e5722c;
+    /* Softer/dimmer orange */
+    color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom: none;
+}
+
+/* Modal title style */
+#SignInModal .modal-title,
+#registerModal .modal-title {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+/* Close button inside modal header */
+#SignInModal .btn-close,
+#registerModal .btn-close {
+    filter: brightness(100%);
+    background-color: white;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+/* Modal body section */
+#SignInModal .modal-body,
+#registerModal .modal-body {
+    padding: 2rem;
+
+}
+
+/* Input fields */
+#SignInModal .form-control,
+#registerModal .form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-weight: 500;
+}
+
+/* Primary button */
+#SignInModal .btn-primary,
+#registerModal .btn-primary {
+    background-color: #e5722c;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+#SignInModal .btn-primary:hover,
+#registerModal .btn-primary:hover {
+    background-color: #c75f1f;
+}
+
+/* Modal links */
+#SignInModal a,
+#registerModal a {
+    color: #e5722c;
+    text-decoration: none;
+}
+
+#SignInModal a:hover,
+#registerModal a:hover {
+    text-decoration: underline;
+}
+
+.ct2text{
+    text-align: left;
+    padding: 4rem;
+}
+.ct2text h2{
+    font-weight: 700;
+    font-size: 150;
+}
+.ct2text p , label{
+    color: #c75f1f;
+    font-weight: 600;
+}
+.ct2text input{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    width: 15rem;
+    padding: 1rem;
+    height: 3rem;
+    border-radius: 20px;
+}
+.ct2text button{
+    color: black;
+      border-radius: 30px;
+    padding: .1rem !important;
+    border: 0.1rem solid rgb(119, 118, 124);
+    background-color: transparent;
+    width: 7rem;
+    height: 3rem;
+}
+.ct2text button:hover{
+     background-color: #c75f1f
+}
+.fade-in-on-load {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+#SignInModal , #registerModal{
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+
+
+
+.container5 {
+
+    margin-top: 3rem;
+    background-color: rgb(50, 50, 50) !important;
+    height: 27rem;
+}
+
+.ct5text1 #c5col {
+    text-align: left;
+    padding-top: 4rem;
+}
+
+.ct5text1 #c5col h2 {
+    color: rgb(238, 116, 37);
+    font-size: 230%;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.ct5text1 #c5col p {
+    color: rgb(199, 199, 199);
+    font-weight: 600;
+}
+
+.ct5text1 #c5col2 {
+    text-align: left;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.ct5text1 #c5col2 h2 {
+    color: rgb(255, 255, 255);
+    font-size: 150%;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.ct5text1 #c5col2 a {
+    color: rgb(199, 199, 199);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.ct5text1 #c5col3 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 4rem;
+}
+
+.ct5text1 #c5col3 h2 {
+    font-size: 150%;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.ct5text1 #c5col3 p {
+    color: rgb(199, 199, 199);
+    font-weight: 600;
+}
+
+#footer-line {
+    border: none;
+    border-top: .1rem solid rgb(199, 199, 199);
+    width: 90%;
+    margin: 2rem auto;
+}
+.ct5text3{
+    text-align: center;
+}
+.ct5text3 p{
+    color:rgb(199, 199, 199) ;
+    font-size: 90%;
+
+}
