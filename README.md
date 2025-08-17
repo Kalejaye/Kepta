@@ -1,4 +1,4 @@
-# 🛍️ Sparkles — E-Commerce Fashion Platform
+# 🛍️ KEPTA — E-Commerce Fashion Platform
 
 KEPTA is a full-stack restaurant ordering website with **frontend** and **backend** integration, built to provide a seamless food shopping experience.  
 The backend handles **user authentication**, **OTP verification via Twilio**, **email verification via Nodemailer**, and **secure payments**.  
